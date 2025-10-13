@@ -52,7 +52,7 @@ public class ScrollDetailTexture : MonoBehaviour
 
 			if (tex != null)
 			{
-				mat.SetTextureOffset("_DetailTex", scrollPerSecond * Time.time);
+				mat.SetTextureOffset("_DetailTex", scrollPerSecond * UnityEngine.Time.time);
 
 				// TODO: It would be better to add support for MaterialBlocks on UIRenderer,
 				// because currently only one Update() function's matrix can be active at a time.
