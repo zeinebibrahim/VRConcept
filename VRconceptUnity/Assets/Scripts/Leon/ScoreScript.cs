@@ -36,7 +36,7 @@ public class ScoreScript : MonoBehaviour
         UpdatePointUI();
     }
 
-    public void ResetPoints()
+    void ResetPoints()
     {
 
         points = 0;
@@ -54,6 +54,7 @@ public class ScoreScript : MonoBehaviour
         {
             print("Score: " + points + " | Highscore: " + Highscore);
         }
+        ResetPoints();
     }
 
     private void UpdatePointUI()
