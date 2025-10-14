@@ -7,12 +7,16 @@ public class PaintSplatter : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject);
+
         // Spawn splatter
         ContactPoint contact = collision.contacts[0];
-        Quaternion rot = Quaternion.FromToRotation(Vector3.forward, contact.normal);
-        rot *= Quaternion.Euler(180, 0, 0);
+        Quaternion rot = Quaternion.LookRotation(-contact.normal, Vector3.up);
 
-        Vector3 pos = contact.point + contact.normal * 0.01f; // een beetje offset zodat hij niet in de muur clippt
+
+        float extraOffset = Random.Range(0.005f, 0.015f);
+        Vector3 pos = contact.point + contact.normal * extraOffset;
+
 
         GameObject splat = Instantiate(paintSplatterPrefab, pos, rot);
 
