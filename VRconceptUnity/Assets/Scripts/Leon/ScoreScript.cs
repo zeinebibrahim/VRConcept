@@ -54,6 +54,7 @@ public class ScoreScript : MonoBehaviour
         {
             print("Score: " + points + " | Highscore: " + Highscore);
         }
+        PlayerPrefs.SetInt("Score", points);
         ResetPoints();
     }
 
