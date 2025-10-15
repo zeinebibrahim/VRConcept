@@ -13,14 +13,14 @@ public class PaintSplatter : MonoBehaviour
         ContactPoint contact = collision.contacts[0];
         Quaternion rot = Quaternion.LookRotation(-contact.normal, Vector3.up);
 
-
+        // Hier krijgt die een kleine offset zodat die niet IN de muur clipped
         float extraOffset = Random.Range(0.005f, 0.015f);
         Vector3 pos = contact.point + contact.normal * extraOffset;
 
 
         GameObject splat = Instantiate(paintSplatterPrefab, pos, rot);
 
-        // Random schaal
+        // Random scale
         float randomScale = Random.Range(0.5f, 1.5f);
         splat.transform.localScale *= randomScale;
 
@@ -36,8 +36,5 @@ public class PaintSplatter : MonoBehaviour
         {
             r.material.color = randomColor;
         }
-
-        // Projectile verwijderen
-        Destroy(gameObject);
     }
 }
