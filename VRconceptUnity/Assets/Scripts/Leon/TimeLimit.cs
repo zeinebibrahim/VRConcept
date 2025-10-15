@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class TimeLimit : MonoBehaviour
 {
-    private float timeLimit = 60f; // Time limit in seconds
+    private float timeLimit; // Time limit
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,15 +17,20 @@ public class TimeLimit : MonoBehaviour
     {
         Timeremaining();
     }
+    public void SetTime(int Time)
+    {
+        timeLimit = Time;
+    }
     void Timeremaining()
     {
         if (timeLimit <= 0)
         {
-            SceneManager.LoadScene("Endscreen");
+            SceneManager.LoadScene("End Screen");
         }
         else
         {
             timeLimit -= Time.deltaTime;
+            Debug.Log(timeLimit);
         }
     }
 }

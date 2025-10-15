@@ -15,10 +15,8 @@ public class TimeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            startGame();
-        }
+        startGame();
+
     }
     public void startGame()
     {

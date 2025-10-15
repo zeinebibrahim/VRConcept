@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.8297, y: 124.2}
+  m_AnchoredPosition: {x: -254.89372, y: 62.800003}
   m_SizeDelta: {x: 152.5406, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &67786124
@@ -569,7 +569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360.736, y: 201}
+  m_AnchoredPosition: {x: -247.8, y: 139.6}
   m_SizeDelta: {x: 170.528, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &769049292
@@ -625,6 +625,8 @@ GameObject:
   - component: {fileID: 786419356}
   - component: {fileID: 786419355}
   - component: {fileID: 786419357}
+  - component: {fileID: 786419358}
+  - component: {fileID: 786419359}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -673,6 +675,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AccuracyText: {fileID: 67786124}
+--- !u!114 &786419358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786419354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715bfc5bfb246244983d49b4b7bc74a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &786419359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786419354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5715bfc5bfb246244983d49b4b7bc74a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +782,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367.8297, y: 169.8}
+  m_AnchoredPosition: {x: -254.89372, y: 108.40001}
   m_SizeDelta: {x: 152.5406, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212888636
