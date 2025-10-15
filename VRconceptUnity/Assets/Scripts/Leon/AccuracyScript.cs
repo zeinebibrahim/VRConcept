@@ -17,12 +17,7 @@ public class AccuracyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.pKey.wasPressedThisFrame)
-        {
-            totalShots = 100;
-            successfulHits = 5;
-            CalculateAccuracy();
-        }
+        
     }
     void CalculateAccuracy()
     {
@@ -45,5 +40,6 @@ public class AccuracyScript : MonoBehaviour
             successfulHits++;
             totalShots++;
         }
+        CalculateAccuracy();
     }
 }
