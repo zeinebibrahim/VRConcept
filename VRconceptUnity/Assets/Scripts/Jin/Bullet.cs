@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float speed = 20f;
     [SerializeField] private float lifeTime = 2f;
     private float lifeTimer;
     private Rigidbody2D rb;
@@ -20,7 +19,7 @@ public class Bullet : MonoBehaviour
     private void Update()
     {
         // Move the bullet forward
-        rb.linearVelocity = transform.right * speed;
+     //   rb.linearVelocity = transform.right * speed;
 
         // Countdown to deactivate bullet
         lifeTimer -= Time.deltaTime;
