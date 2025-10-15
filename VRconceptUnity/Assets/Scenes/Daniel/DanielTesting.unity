@@ -3325,6 +3325,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ca10833a81506a41857658fee83297a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1396912422}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ca10833a81506a41857658fee83297a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1396912425}
   m_SourcePrefab: {fileID: 100100000, guid: 1ca10833a81506a41857658fee83297a, type: 3}
 --- !u!1 &1396912420 stripped
 GameObject:
@@ -3536,6 +3539,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1396912425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396912420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085486ea14c598b4b81dbe3b868986f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1502060035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,7 +3566,6 @@ GameObject:
   - component: {fileID: 1502060043}
   - component: {fileID: 1502060042}
   - component: {fileID: 1502060041}
-  - component: {fileID: 1502060040}
   - component: {fileID: 1502060039}
   - component: {fileID: 1502060047}
   - component: {fileID: 1502060046}
@@ -3607,48 +3621,6 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 1502060043}
   m_MinHeight: 0
   m_MaxHeight: Infinity
---- !u!114 &1502060040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502060035}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 1502060044}
-  m_TurnAmount: 45
-  m_DebounceTime: 0.5
-  m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 1
-  m_DelayTime: 0
-  m_LeftHandSnapTurnAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Hand Snap Turn
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: e7dbf1a4-b8af-4154-9c5e-8c7f183f0dbc
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -7374733323251553461, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_RightHandSnapTurnAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Snap Turn
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 84b8d2e8-9cf3-4e2e-87cc-442e596bff09
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1502060041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3811,6 +3783,18 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightCancel:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Cancel
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6edd709b-33af-4f8c-a906-26c7d070b7ba
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1502060047
 MonoBehaviour:
   m_ObjectHideFlags: 0
