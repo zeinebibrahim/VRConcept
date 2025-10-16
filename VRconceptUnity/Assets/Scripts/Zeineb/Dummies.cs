@@ -23,7 +23,7 @@ public class Dummies : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == paintSplatter.gameObject) //If bullet hits
+        if (collision.gameObject.GetComponent<PaintSplatter>()) //If bullet hits
         {
             print("trigger");
             animator.enabled = true; //animation dummy falls
