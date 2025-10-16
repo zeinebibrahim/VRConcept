@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1621960202747348660}
   - component: {fileID: 6218152999059973055}
   - component: {fileID: 2276700459951387744}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TestBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d76703b8b450841b541901989f40fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintSplatterPrefab: {fileID: 7067427774701693361, guid: 60b5f904a9ac97a49b25e9be45a7526b, type: 3}
-  paintSplatter:
-    serializedVersion: 2
-    m_Bits: 64
+  decalPrefab: {fileID: 7985665496308631778, guid: 181bcc9b88b50324fb9122d4f5d09104, type: 3}
