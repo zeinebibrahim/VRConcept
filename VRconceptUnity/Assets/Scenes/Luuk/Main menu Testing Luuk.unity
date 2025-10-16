@@ -2815,6 +2815,7 @@ GameObject:
   - component: {fileID: 893120937}
   - component: {fileID: 893120939}
   - component: {fileID: 893120938}
+  - component: {fileID: 893120941}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2904,6 +2905,18 @@ RectTransform:
   m_AnchoredPosition: {x: 417.42, y: 159.14}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &893120941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893120936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b5d91e1e5582340aa55cf21e12624a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &936991119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,7 +4351,6 @@ GameObject:
   - component: {fileID: 1208858847}
   - component: {fileID: 1208858845}
   - component: {fileID: 1208858849}
-  - component: {fileID: 1208858850}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4433,18 +4445,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &1208858850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208858844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b5d91e1e5582340aa55cf21e12624a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1208876093
 PrefabInstance:
   m_ObjectHideFlags: 0
