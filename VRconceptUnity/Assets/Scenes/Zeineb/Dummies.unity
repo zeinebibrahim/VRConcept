@@ -727,7 +727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muurLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1
   speed: 5
   jumpForce: 5
   rb: {fileID: 1315452779}
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 1720496348}
   - component: {fileID: 1720496347}
   - component: {fileID: 1720496351}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Muur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
