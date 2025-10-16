@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class Dummies : MonoBehaviour
 {
+    PaintSplatter paintSplatter;
+    [SerializeField] Animator animator;
     [SerializeField] float grote = 2f;
     [SerializeField] float speed = 2f;
 
+    private void Start()
+    {
+        animator.enabled = false;
+    }
+
     void Update()
     {
-        float x = Mathf.Sin(UnityEngine.Time.time * speed) * grote; //Makes it move accordingly and smoothly on the x as
+        float x = Mathf.Sin(Time.time * speed) * grote; //Makes it move accordingly and smoothly on the x as
         transform.position = new Vector3(x, transform.position.y, transform.position.z); //Object gets new transform position
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject) //If bullet hits 
+        if (collision.gameObject == paintSplatter.gameObject) //If bullet hits
         {
-            print("trigger"); //animation dummy falls
-            //gameObject.SetActive(false);
-            other.gameObject.SetActive(false);
+            print("trigger");
+            animator.enabled = true; //animation dummy falls
         }
     }
 }
