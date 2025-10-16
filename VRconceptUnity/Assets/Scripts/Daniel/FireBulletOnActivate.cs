@@ -3,9 +3,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class FireBulletOnActivate : MonoBehaviour
 {
-    // [SerializeField] GameObject projectile;
-    // [SerializeField] float firespeed;
-    // [SerializeField] Transform spawnPoint;
+     [SerializeField] ObjectPooler bulletPool;
+     [SerializeField] Transform spawnPoint;
+    [SerializeField] float speed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,13 +19,19 @@ public class FireBulletOnActivate : MonoBehaviour
         
     }
 
+    private void ShootPaint()
+    {
+        GameObject bullet = bulletPool.GetPooledObject();
+        bullet.SetActive(true);
+    }
     private void FireBullet(ActivateEventArgs args)
     {
-        
+        GameObject bullet = bulletPool.GetPooledObject();
+
         Debug.Log("Fire Bullet");
         
-        // GameObject spawnBullet = Instantiate(projectile);
-        // spawnBullet.transform.position = spawnPoint.position;
-        // spawnBullet.GetComponent<Rigidbody>().linearVelocity = spawnPoint.forward * firespeed;
+         bullet.SetActive(true);
+         bullet.transform.position = spawnPoint.position;
+         bullet.GetComponent<Rigidbody>().linearVelocity = spawnPoint.forward * speed;
     }
 }
