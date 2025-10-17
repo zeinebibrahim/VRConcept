@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scripts/Scenes/Leon/SampleSceneLeon.unity
     guid: 0a3536da2435d7d46bf2a8451115e433
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Luuk/Main menu Testing Luuk.unity
     guid: d24792ce6fec2a346a5a7c340328b730
   - enabled: 1
