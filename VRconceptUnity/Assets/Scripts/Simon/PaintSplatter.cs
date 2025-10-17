@@ -1,14 +1,16 @@
+using System;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Random = UnityEngine.Random;
 
 public class PaintSplatter : MonoBehaviour
 {
     [SerializeField] GameObject decalPrefab;
-
+    [SerializeField] SoundManager soundManager;
+    
     void OnCollisionEnter(Collision collision)
     {
         print(collision.gameObject.name);
-        
         ContactPoint contact = collision.contacts[0];
         Quaternion rot = Quaternion.LookRotation(-contact.normal, Vector3.up);
         float extraOffset = Random.Range(0.005f, 0.015f);
@@ -30,5 +32,7 @@ public class PaintSplatter : MonoBehaviour
 
         //Zet als child van geraakt object
         decal.transform.SetParent(collision.transform, true);
+        
+        soundManager.PlaySplatSound();
     }
 }
