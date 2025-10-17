@@ -24,6 +24,7 @@ public class Bullet : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+    // destroys the bullet if a collision occurs with any other object.
     private void OnCollisionEnter(Collision collision)
     {
         gameObject.SetActive(false);

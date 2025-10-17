@@ -42,7 +42,6 @@ public class Reloading : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"Ammo: {currentAmmo} | Reloading: {reloading}");
         // If ammo is empty and the gun is not already reloading, start reload coroutine
         if (currentAmmo == 0 && !reloading)
         {
@@ -54,10 +53,8 @@ public class Reloading : MonoBehaviour
     IEnumerator ReloadGun()
     {
         reloading = true; // Set reloading state to true
-        Debug.Log("Reloading...");
         yield return new WaitForSeconds(reloadTime); // Wait for reload time to finish
         reloading = false; // Done reloading
         currentAmmo = maxAmmo; // Reset ammo to full
-        Debug.Log("Reload complete!");
     }
 }
