@@ -7,6 +7,8 @@ public class PaintSplatter : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        print(collision.gameObject.name);
+        
         ContactPoint contact = collision.contacts[0];
         Quaternion rot = Quaternion.LookRotation(-contact.normal, Vector3.up);
         float extraOffset = Random.Range(0.005f, 0.015f);

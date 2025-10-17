@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8709406278124426505}
   - component: {fileID: 6800159848416286021}
   - component: {fileID: 3880616497368533565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BulletTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738736ed7ebf6e145b5c0b9a72372c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
   lifeTime: 2
 --- !u!114 &6800159848416286021
 MonoBehaviour:
@@ -137,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d76703b8b450841b541901989f40fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintSplatterPrefab: {fileID: 7067427774701693361, guid: 60b5f904a9ac97a49b25e9be45a7526b, type: 3}
+  decalPrefab: {fileID: 7985665496308631778, guid: 181bcc9b88b50324fb9122d4f5d09104, type: 3}
 --- !u!54 &3880616497368533565
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -164,4 +163,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
