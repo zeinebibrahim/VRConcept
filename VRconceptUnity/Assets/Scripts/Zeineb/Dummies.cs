@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Dummies : MonoBehaviour
 {
-    SoundManager soundManager;
     PaintSplatter paintSplatter;
     [SerializeField] Animator animator;
     [SerializeField] float grote = 2f;
@@ -26,7 +25,6 @@ public class Dummies : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PaintSplatter>()) //If bullet hits
         {
-            soundManager.PlaySplatSound(); //Splash sound
             print("trigger");
             animator.enabled = true; //animation dummy falls
         }
