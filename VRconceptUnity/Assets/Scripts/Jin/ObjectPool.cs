@@ -29,8 +29,6 @@ public class ObjectPooler : MonoBehaviour
                 return obj;
             }
         }
-
-        // Optional: expand pool if needed
         GameObject newObj = Instantiate(bulletPrefab);
         newObj.SetActive(false);
         pool.Add(newObj);
